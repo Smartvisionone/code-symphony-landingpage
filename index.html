@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Symphony — Softwareentwicklung, Beratung und Automatisierung für Ihr Unternehmen. Wir entwickeln maßgeschneiderte Lösungen.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Code Symphony — Software. Beratung. Automatisierung.">
+  <meta property="og:description" content="Wir entwickeln maßgeschneiderte Softwarelösungen, beraten bei der Integration und optimieren Geschäftsprozesse durch Automatisierung.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+
+  <title>Code Symphony — Software. Beratung. Automatisierung.</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       Navigation
+       ==================================================================== -->
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Code Symphony — Startseite">
+        <svg class="nav__logo-icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6C3CE1"/>
+              <stop offset="100%" stop-color="#00D4AA"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="8" fill="#0a0f1c"/>
+          <text x="16" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="16" fill="url(#logo-gradient)">CS</text>
+        </svg>
+        Code <span>Symphony</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#leistungen" class="nav__link">Leistungen</a></li>
+        <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       Hero Section
+       ==================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span>Code</span>
+        <span class="gradient-text">Symphony</span>
+      </h1>
+      <p class="hero__subtitle">
+        Softwareentwicklung. Beratung. Automatisierung.
+        Wir orchestrieren Technologie für Ihren Geschäftserfolg.
+      </p>
+      <a href="#kontakt" class="hero__cta">
+        Kontakt aufnehmen
+        <svg class="hero__cta-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Leistungen Section
+       ==================================================================== -->
+  <section class="services" id="leistungen">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Was wir tun</span>
+        <h2 class="section-title">Unsere Leistungen</h2>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Card 1: Softwareentwicklung -->
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="#6C3CE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Softwareentwicklung</h3>
+          <p class="service-card__text">
+            Maßgeschneiderte Softwarelösungen — von der Konzeption bis zum
+            produktionsreifen System. Modern, skalierbar und wartbar.
+          </p>
+        </article>
+
+        <!-- Card 2: Beratung & Integration -->
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#6C3CE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Beratung &amp; Integration</h3>
+          <p class="service-card__text">
+            Strategische Beratung bei der Softwareintegration. Wir verbinden
+            bestehende Systeme und schaffen nahtlose Workflows.
+          </p>
+        </article>
+
+        <!-- Card 3: Automatisierung -->
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#6C3CE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Automatisierung</h3>
+          <p class="service-card__text">
+            Geschäftsprozesse intelligent automatisieren. Weniger manuelle
+            Arbeit, mehr Effizienz und Geschwindigkeit.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Kontakt Section
+       ==================================================================== -->
+  <section class="contact" id="kontakt">
+    <div class="contact__inner fade-in">
+      <span class="section-label">Lassen Sie uns sprechen</span>
+      <h2 class="contact__title">Ihr Projekt beginnt hier</h2>
+      <p class="contact__text">
+        Sie haben eine Idee, eine Herausforderung oder brauchen Unterstützung?
+        Schreiben Sie uns — wir melden uns zeitnah.
+      </p>
+      <a href="mailto:hello@code-symphony.de" class="contact__cta">
+        E-Mail schreiben
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <p class="contact__email">
+        oder direkt an <a href="mailto:hello@code-symphony.de">hello@code-symphony.de</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">
+        &copy; <span id="current-year">2026</span> Code Symphony UG (haftungsbeschränkt)
+      </p>
+      <div class="footer__links">
+        <a href="impressum.html" class="footer__link">Impressum</a>
+        <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
