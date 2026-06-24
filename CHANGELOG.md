@@ -2,6 +2,22 @@
 
 Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
 
+## [2.3.0] — 2026-06-25
+
+### Mehrsprachigkeit (i18n)
+
+- 4 Sprachen: Deutsch, Englisch, Spanisch, Französisch
+- URL-Struktur: `/de/`, `/en/`, `/es/`, `/fr/` mit Sprach-Präfix
+- Root (`/`) leitet automatisch basierend auf Browser-Sprache weiter
+- Language-Dropdown im Header (Desktop + Mobile) mit Flag-Emojis
+- Sprachpräferenz wird in localStorage gespeichert
+- 12 HTML-Seiten: index + impressum + datenschutz × 4 Sprachen
+- hreflang SEO-Tags auf allen Seiten
+- Rechtliche Seiten (EN/ES/FR) mit Hinweis: "Deutsche Fassung ist rechtlich maßgeblich"
+- AGB bleibt nur Deutsch (nicht öffentlich)
+- Vercel Rewrites + Content-Language Headers
+- DSGVO-konform: Browser-Sprache statt IP-basierte Erkennung
+
 ## [2.2.0] — 2026-06-24
 
 ### DPA-Compliance & Hosting-Optimierung
