@@ -2,6 +2,16 @@
 
 Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
 
+## [2.2.0] — 2026-06-24
+
+### DPA-Compliance & Hosting-Optimierung
+
+- Alle 6 DPAs abgeschlossen: Vercel, Stripe, Supabase, Mailjet, Hostinger, Buchhaltungsbutler
+- Vercel Functions auf Region Frankfurt (eu-central-1, fra1) umgestellt
+- Datenschutzerklärung: Vercel-Sektion mit Frankfurt-Region und DPA-Vermerk aktualisiert
+- Hostinger VPS (Frankfurt) als Anbieter in AVV, Verarbeitungsverzeichnis und TOM aufgenommen
+- Alle Legal-Dokumente (AVV, Verarbeitungsverzeichnis, TOM) mit aktualisierten Standorten
+
 ## [2.1.0] — 2026-06-24
 
 ### AGB, Datenschutz-Upgrade & Rechtliche Dokumente
