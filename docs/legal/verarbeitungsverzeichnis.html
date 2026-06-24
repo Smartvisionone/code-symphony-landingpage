@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Verarbeitungsverzeichnis — Code Symphony</title>
+  <style>
+    @page { size: A4 landscape; margin: 20mm 15mm; }
+    body { font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif; font-size: 10pt; line-height: 1.5; color: #1a1a1a; max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 20pt; margin-bottom: 4px; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 13pt; margin-top: 28px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    .header-meta { color: #64748b; font-size: 10pt; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 9pt; }
+    th, td { border: 1px solid #cbd5e1; padding: 6px 8px; text-align: left; vertical-align: top; }
+    th { background: #f1f5f9; font-weight: 600; white-space: nowrap; }
+    .note { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 10px 14px; margin: 16px 0; font-size: 9pt; }
+    @media print { body { padding: 0; max-width: none; } }
+  </style>
+</head>
+<body>
+
+  <h1>Verzeichnis von Verarbeitungstätigkeiten</h1>
+  <p class="header-meta">gemäß Art. 30 DSGVO — Stand: 24. Juni 2026</p>
+
+  <!-- ================================================================ -->
+
+  <h2>Angaben zum Verantwortlichen</h2>
+
+  <table>
+    <tr><th style="width:250px">Name des Verantwortlichen</th><td>Code Symphony UG (haftungsbeschränkt)</td></tr>
+    <tr><th>Anschrift</th><td>Dorotheenstraße 33, 09113 Chemnitz</td></tr>
+    <tr><th>Geschäftsführer</th><td>Rayk Lorz</td></tr>
+    <tr><th>E-Mail</th><td>hello@code-symphony.de</td></tr>
+    <tr><th>USt-ID</th><td>DE462497704</td></tr>
+    <tr><th>Datenschutzbeauftragter</th><td>Nicht bestellt (weniger als 20 Personen regelmäßig mit Datenverarbeitung befasst, § 38 BDSG)</td></tr>
+  </table>
+
+  <!-- ================================================================ -->
+
+  <h2>Verarbeitungstätigkeiten</h2>
+
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Verarbeitungstätigkeit</th>
+      <th>Zweck</th>
+      <th>Rechtsgrundlage</th>
+      <th>Kategorien betroffener Personen</th>
+      <th>Kategorien personenbezogener Daten</th>
+      <th>Empfänger / Dritte</th>
+      <th>Drittland­transfer</th>
+      <th>Löschfrist</th>
+      <th>TOM-Verweis</th>
+    </tr>
+    <tr>
+      <td>V-01</td>
+      <td><strong>Website-Hosting</strong></td>
+      <td>Bereitstellung der Website code-symphony.de</td>
+      <td>Art. 6 (1) f DSGVO<br>(berechtigtes Interesse)</td>
+      <td>Website-Besucher</td>
+      <td>IP-Adresse, Browsertyp, Betriebssystem, Referrer URL, Zugriffszeit</td>
+      <td>Vercel Inc. (USA)</td>
+      <td>USA — SCC + DPF</td>
+      <td>Server-Logs: 30 Tage</td>
+      <td>TOM §§ 1–3</td>
+    </tr>
+    <tr>
+      <td>V-02</td>
+      <td><strong>E-Mail-Kommunikation</strong></td>
+      <td>Bearbeitung von Anfragen, vorvertragliche Maßnahmen</td>
+      <td>Art. 6 (1) b, f DSGVO</td>
+      <td>Interessenten, Kunden, Geschäftspartner</td>
+      <td>Name, E-Mail-Adresse, Inhalt der Anfrage</td>
+      <td>Mailjet SAS (Frankreich)</td>
+      <td>Nein (EU)</td>
+      <td>Bis Zweckentfall oder Löschanfrage; max. 6 Jahre (§ 257 HGB)</td>
+      <td>TOM §§ 1, 4</td>
+    </tr>
+    <tr>
+      <td>V-03</td>
+      <td><strong>SaaS-Bereitstellung</strong></td>
+      <td>Bereitstellung und Betrieb von SaaS-Software für Kunden</td>
+      <td>Art. 6 (1) b DSGVO<br>(Vertragserfüllung)</td>
+      <td>Kunden (Unternehmer), deren Endkunden (Auftragsverarbeitung)</td>
+      <td>Stammdaten, Kontaktdaten, Nutzungsdaten, Inhaltsdaten</td>
+      <td>Supabase Inc. (Singapur, Hosting EU)</td>
+      <td>Nein (Hosting EU)</td>
+      <td>30 Tage nach Account-Löschung</td>
+      <td>TOM §§ 1–6</td>
+    </tr>
+    <tr>
+      <td>V-04</td>
+      <td><strong>Benutzer­authentifizierung</strong></td>
+      <td>Login und Sitzungsverwaltung für SaaS-Kunden</td>
+      <td>Art. 6 (1) b, f DSGVO</td>
+      <td>Kunden mit Account</td>
+      <td>E-Mail, Passwort (gehasht), Login-Zeitstempel, IP-Adresse, Session-Daten</td>
+      <td>Supabase Inc. (Hosting EU)</td>
+      <td>Nein (Hosting EU)</td>
+      <td>Bis Account-Löschung + 30 Tage</td>
+      <td>TOM §§ 1–3</td>
+    </tr>
+    <tr>
+      <td>V-05</td>
+      <td><strong>Zahlungs­abwicklung</strong></td>
+      <td>Abwicklung von Zahlungen für SaaS-Subscriptions, Projekte und Credits</td>
+      <td>Art. 6 (1) b DSGVO<br>(Vertragserfüllung)</td>
+      <td>Zahlende Kunden</td>
+      <td>Name, E-Mail, Rechnungsadresse, Zahlungsmethode, Transaktionsdaten, IP-Adresse</td>
+      <td>Stripe Inc. / Stripe Technology Europe Ltd.</td>
+      <td>USA — SCC + DPF</td>
+      <td>Rechnungsdaten: 10 Jahre (§ 147 AO)</td>
+      <td>TOM §§ 1, 5</td>
+    </tr>
+    <tr>
+      <td>V-06</td>
+      <td><strong>Transaktionale E-Mails</strong></td>
+      <td>Versand von Rechnungen, Passwort-Reset, Benachrichtigungen</td>
+      <td>Art. 6 (1) b, f DSGVO</td>
+      <td>Kunden mit Account</td>
+      <td>E-Mail-Adresse, Name, E-Mail-Inhalt, Metadaten</td>
+      <td>Mailjet SAS (Frankreich)</td>
+      <td>Nein (EU)</td>
+      <td>E-Mail-Logs: 30 Tage</td>
+      <td>TOM §§ 1, 4</td>
+    </tr>
+    <tr>
+      <td>V-07</td>
+      <td><strong>Projektarbeit / Beratung</strong></td>
+      <td>IT-Beratung, Softwareentwicklung für Kunden</td>
+      <td>Art. 6 (1) b DSGVO</td>
+      <td>Ansprechpartner bei Kunden</td>
+      <td>Kontaktdaten, Projektdaten, ggf. Zugang zu Kundensystemen</td>
+      <td>Keine (interne Verarbeitung)</td>
+      <td>Nein</td>
+      <td>6 Monate nach Projektende; Rechnungen 10 Jahre</td>
+      <td>TOM §§ 1, 6</td>
+    </tr>
+    <tr>
+      <td>V-08</td>
+      <td><strong>Buchhaltung / Rechnungs­wesen</strong></td>
+      <td>Erstellung und Aufbewahrung von Rechnungen und Belegen</td>
+      <td>Art. 6 (1) c DSGVO<br>(rechtliche Verpflichtung)</td>
+      <td>Kunden, Lieferanten</td>
+      <td>Stammdaten, Rechnungsdaten, Zahlungsdaten (Metadaten)</td>
+      <td>Buchhaltungsbutler (ggf. weitere Steuerberater)</td>
+      <td>Nein (EU)</td>
+      <td>10 Jahre (§ 147 AO, § 257 HGB)</td>
+      <td>TOM §§ 1, 5</td>
+    </tr>
+  </table>
+
+  <div class="note">
+    <strong>Hinweis:</strong> Dieses Verzeichnis ist mindestens jährlich zu prüfen und bei Änderungen der Verarbeitungstätigkeiten unverzüglich zu aktualisieren.
+  </div>
+
+  <!-- ================================================================ -->
+
+  <h2>Übersicht der Auftragsverarbeiter und Unterauftragnehmer</h2>
+
+  <table>
+    <tr>
+      <th>Anbieter</th>
+      <th>Sitz</th>
+      <th>Leistung</th>
+      <th>DPA/AVV vorhanden?</th>
+      <th>Drittland?</th>
+      <th>Garantie</th>
+    </tr>
+    <tr>
+      <td>Vercel Inc.</td>
+      <td>USA</td>
+      <td>Hosting</td>
+      <td>☐ Zu prüfen</td>
+      <td>Ja (USA)</td>
+      <td>SCC + DPF</td>
+    </tr>
+    <tr>
+      <td>Supabase Inc.</td>
+      <td>Singapur</td>
+      <td>Datenbank, Auth</td>
+      <td>☐ Zu prüfen</td>
+      <td>Hosting: EU</td>
+      <td>EU-Hosting (AWS Frankfurt)</td>
+    </tr>
+    <tr>
+      <td>Stripe Inc. / Stripe Tech. Europe Ltd.</td>
+      <td>USA / Irland</td>
+      <td>Zahlungsabwicklung</td>
+      <td>☐ Zu prüfen</td>
+      <td>Ja (USA)</td>
+      <td>SCC + DPF</td>
+    </tr>
+    <tr>
+      <td>Mailjet SAS (Sinch)</td>
+      <td>Frankreich</td>
+      <td>Transaktionale E-Mails</td>
+      <td>☐ Zu prüfen</td>
+      <td>Nein (EU)</td>
+      <td>EU-Verarbeitung</td>
+    </tr>
+    <tr>
+      <td>Buchhaltungsbutler</td>
+      <td>Deutschland</td>
+      <td>Buchhaltung</td>
+      <td>☐ Zu prüfen</td>
+      <td>Nein (DE)</td>
+      <td>Inlandsverarbeitung</td>
+    </tr>
+  </table>
+
+</body>
+</html>

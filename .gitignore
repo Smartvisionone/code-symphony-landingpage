@@ -5,3 +5,4 @@ node_modules/
 .vscode/
 .vercel
 audit/
+node_modules/

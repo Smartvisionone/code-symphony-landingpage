@@ -2,6 +2,20 @@
 
 Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
 
+## [2.1.0] — 2026-06-24
+
+### AGB, Datenschutz-Upgrade & Rechtliche Dokumente
+
+- Neue AGB-Seite (11 §§): B2B-only, SaaS-SLA mit Support-Reaktionszeiten, Stripe-Zahlung, Haftungsbegrenzung
+- AGB als kryptische URL (nicht öffentlich verlinkt, für Angebote und Registrierung)
+- Datenschutzerklärung erweitert: Stripe, Supabase, Mailjet, Vercel (mit Drittlandtransfer-Details)
+- Betroffenenrechte um Account-Löschung und Datenexport erweitert
+- AVV-Template (Art. 28 DSGVO) für Kunden erstellt
+- Verarbeitungsverzeichnis (Art. 30 DSGVO) mit 8 Verarbeitungstätigkeiten
+- TOM-Dokument (Art. 32 DSGVO) mit 6 Maßnahmenbereichen
+- Alle Dokumente als PDF exportiert (Stand 24.06.2026)
+- USt-ID DE462497704 im Impressum eingetragen
+
 ## [2.0.0] — 2026-06-24
 
 ### Komplett-Redesign: Corporate Identity Rebranding
