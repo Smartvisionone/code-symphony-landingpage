@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>TOM — Technische und Organisatorische Maßnahmen — Code Symphony</title>
+  <style>
+    @page { size: A4; margin: 25mm 20mm; }
+    body { font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 22pt; margin-bottom: 8px; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14pt; margin-top: 28px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    h3 { font-size: 11pt; margin-top: 16px; }
+    p, li { margin-bottom: 6px; }
+    ul { padding-left: 24px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 10pt; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f1f5f9; font-weight: 600; width: 200px; }
+    .header-meta { color: #64748b; font-size: 10pt; margin-bottom: 24px; }
+    .note { background: #eff6ff; border-left: 3px solid #3b82f6; padding: 10px 14px; margin: 16px 0; font-size: 10pt; }
+    @media print { body { padding: 0; } }
+  </style>
+</head>
+<body>
+
+  <h1>Technische und Organisatorische Maßnahmen (TOM)</h1>
+  <p class="header-meta">gemäß Art. 32 DSGVO — Stand: 24. Juni 2026</p>
+  <p class="header-meta">Code Symphony UG (haftungsbeschränkt) · Dorotheenstraße 33 · 09113 Chemnitz</p>
+
+  <div class="note">
+    Dieses Dokument beschreibt die technischen und organisatorischen Maßnahmen, die Code Symphony zum Schutz personenbezogener Daten ergreift. Es ist Bestandteil des AVV (Anlage 2) und wird mindestens jährlich überprüft und aktualisiert.
+  </div>
+
+  <!-- ================================================================ -->
+
+  <h2>§ 1 Vertraulichkeit (Art. 32 Abs. 1 lit. b DSGVO)</h2>
+
+  <h3>1.1 Zutrittskontrolle</h3>
+  <p>Maßnahmen, die Unbefugten den Zutritt zu Datenverarbeitungsanlagen verwehren:</p>
+  <ul>
+    <li>Keine eigenen Server — Cloud-basierte Infrastruktur (Vercel, Supabase/AWS)</li>
+    <li>Arbeitsplätze mit Bildschirmsperre (automatisch nach 5 Minuten)</li>
+    <li>Verschlüsselte Festplatten (FileVault / BitLocker) auf allen Arbeitsgeräten</li>
+    <li>Physischer Zutritt zu Arbeitsräumen nur für autorisierte Personen</li>
+  </ul>
+
+  <h3>1.2 Zugangskontrolle</h3>
+  <p>Maßnahmen, die verhindern, dass Datenverarbeitungssysteme von Unbefugten genutzt werden:</p>
+  <ul>
+    <li>Individuelle Benutzerkonten mit starken Passwörtern (min. 16 Zeichen)</li>
+    <li>Zwei-Faktor-Authentifizierung (2FA/MFA) für alle kritischen Systeme</li>
+    <li>SSH-Key-Authentifizierung für Serverzugriffe</li>
+    <li>Automatische Sitzungszeitbegrenzung</li>
+    <li>Dokumentierte Zugangsberechtigungen und regelmäßige Überprüfung</li>
+  </ul>
+
+  <h3>1.3 Zugriffskontrolle</h3>
+  <p>Maßnahmen, die gewährleisten, dass Berechtigte nur auf die ihnen zugewiesenen Daten zugreifen:</p>
+  <ul>
+    <li>Rollenbasierte Zugriffskontrolle (RBAC) in allen Systemen</li>
+    <li>Principle of Least Privilege — Benutzer erhalten nur die minimal notwendigen Rechte</li>
+    <li>Row-Level Security (RLS) in der Datenbank (Supabase)</li>
+    <li>Trennung von Entwicklungs-, Staging- und Produktionsumgebungen</li>
+    <li>Logging aller administrativen Zugriffe</li>
+  </ul>
+
+  <h3>1.4 Trennungskontrolle</h3>
+  <p>Maßnahmen, die gewährleisten, dass Daten verschiedener Auftraggeber getrennt verarbeitet werden:</p>
+  <ul>
+    <li>Mandantentrennung auf Datenbankebene (separate Schemata/Tabellen pro Kunde)</li>
+    <li>Logische Trennung durch Tenant-IDs in allen Datenbankabfragen</li>
+    <li>Getrennte Supabase-Projekte für verschiedene Kundenprojekte</li>
+    <li>Keine Vermischung von Kunden- und internen Daten</li>
+  </ul>
+
+  <!-- ================================================================ -->
+
+  <h2>§ 2 Integrität (Art. 32 Abs. 1 lit. b DSGVO)</h2>
+
+  <h3>2.1 Weitergabekontrolle</h3>
+  <p>Maßnahmen, die gewährleisten, dass Daten bei der Übertragung nicht unbefugt gelesen, kopiert oder verändert werden:</p>
+  <ul>
+    <li>TLS 1.2/1.3 für alle Datenübertragungen (HTTPS erzwungen)</li>
+    <li>HSTS (HTTP Strict Transport Security) auf allen Domains</li>
+    <li>Verschlüsselte E-Mail-Kommunikation (TLS)</li>
+    <li>Keine unverschlüsselte Übertragung personenbezogener Daten</li>
+    <li>VPN für Remote-Zugriffe auf interne Systeme</li>
+  </ul>
+
+  <h3>2.2 Eingabekontrolle</h3>
+  <p>Maßnahmen, die gewährleisten, dass nachträglich geprüft werden kann, ob und von wem Daten verändert wurden:</p>
+  <ul>
+    <li>Audit-Logging für alle schreibenden Datenbankoperationen</li>
+    <li>Versionskontrolle (Git) für alle Code-Änderungen</li>
+    <li>Unveränderbare Deployment-Logs (Vercel)</li>
+    <li>Zeitstempel für alle Datensatzänderungen (created_at, updated_at)</li>
+  </ul>
+
+  <!-- ================================================================ -->
+
+  <h2>§ 3 Verfügbarkeit und Belastbarkeit (Art. 32 Abs. 1 lit. b, c DSGVO)</h2>
+
+  <h3>3.1 Verfügbarkeitskontrolle</h3>
+  <p>Maßnahmen zum Schutz gegen zufällige oder mutwillige Zerstörung oder Verlust:</p>
+  <ul>
+    <li>Automatisierte Datenbank-Backups (Supabase: tägliche Backups, 30 Tage Retention)</li>
+    <li>Georedundante Infrastruktur (Vercel Edge Network, AWS Multi-AZ)</li>
+    <li>Monitoring und Alerting bei Systemausfällen</li>
+    <li>Dokumentiertes Disaster-Recovery-Verfahren</li>
+    <li>Regelmäßige Backup-Wiederherstellungstests</li>
+  </ul>
+
+  <h3>3.2 Rasche Wiederherstellbarkeit</h3>
+  <p>Maßnahmen zur raschen Wiederherstellung der Verfügbarkeit nach einem Zwischenfall:</p>
+  <ul>
+    <li>Infrastructure as Code (reproduzierbare Deployments)</li>
+    <li>Automatisierte Deployment-Pipelines (Vercel CI/CD)</li>
+    <li>Point-in-Time Recovery für Datenbankzustände</li>
+    <li>Maximale Wiederherstellungszeit (RTO): 4 Stunden</li>
+    <li>Maximaler Datenverlust (RPO): 24 Stunden</li>
+  </ul>
+
+  <!-- ================================================================ -->
+
+  <h2>§ 4 Verfahren zur regelmäßigen Überprüfung (Art. 32 Abs. 1 lit. d DSGVO)</h2>
+
+  <h3>4.1 Datenschutz-Management</h3>
+  <ul>
+    <li>Jährliche Überprüfung und Aktualisierung dieser TOM</li>
+    <li>Schulung aller Mitarbeiter zu Datenschutz und IT-Sicherheit</li>
+    <li>Dokumentiertes Verfahren für Datenschutzverletzungen (Breach Notification)</li>
+    <li>Regelmäßige Überprüfung der Auftragsverarbeiter</li>
+  </ul>
+
+  <h3>4.2 Incident Response</h3>
+  <ul>
+    <li>Meldepflicht bei Datenschutzverletzungen: innerhalb von 24 Stunden an den Auftraggeber</li>
+    <li>Dokumentation aller Sicherheitsvorfälle</li>
+    <li>Post-Incident-Review und Maßnahmenableitung</li>
+  </ul>
+
+  <!-- ================================================================ -->
+
+  <h2>§ 5 Auftragsverarbeitung und Zahlungsdaten</h2>
+
+  <ul>
+    <li>Keine eigene Speicherung von Kreditkarten- oder Kontodaten</li>
+    <li>Zahlungsabwicklung ausschließlich über Stripe (PCI DSS Level 1 zertifiziert)</li>
+    <li>Nur Transaktions-Metadaten (Betrag, Zeitpunkt, Status) werden lokal gespeichert</li>
+    <li>Rechnungsdaten werden 10 Jahre aufbewahrt (§ 147 AO, § 257 HGB)</li>
+  </ul>
+
+  <!-- ================================================================ -->
+
+  <h2>§ 6 Softwareentwicklung und Code-Sicherheit</h2>
+
+  <ul>
+    <li>Versionskontrolle über Git (GitHub, private Repositories)</li>
+    <li>Code-Reviews vor jedem Merge in den Hauptbranch</li>
+    <li>Keine Secrets im Quellcode (Nutzung von Umgebungsvariablen und Secret Management)</li>
+    <li>Abhängigkeits-Scanning auf bekannte Schwachstellen</li>
+    <li>OWASP Top 10 als Mindeststandard bei der Entwicklung</li>
+    <li>Input-Validierung und Output-Encoding gegen Injection-Angriffe</li>
+  </ul>
+
+  <!-- ================================================================ -->
+
+  <h2>Änderungshistorie</h2>
+
+  <table>
+    <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Verantwortlich</th></tr>
+    <tr><td>1.0</td><td>24.06.2026</td><td>Erstfassung</td><td>Rayk Lorz</td></tr>
+  </table>
+
+</body>
+</html>
