@@ -216,7 +216,7 @@ ul {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
+  background: linear-gradient(135deg, var(--color-primary-muted), var(--color-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -252,10 +252,10 @@ ul {
 }
 
 .nav.scrolled {
-  background-color: rgba(10, 15, 28, 0.95);
+  background-color: rgba(7, 25, 30, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px 0 rgba(2, 245, 161, 0.08);
 }
 
 .nav__inner {
@@ -288,7 +288,7 @@ ul {
 }
 
 .nav__logo span {
-  background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
+  background: linear-gradient(135deg, var(--color-primary-muted), var(--color-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -421,6 +421,30 @@ ul {
   z-index: 2;
   text-align: center;
   max-width: 800px;
+}
+
+/* Terminal decorative element */
+.hero__terminal {
+  display: inline-block;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-sm) var(--space-lg);
+  background: rgba(15, 42, 50, 0.6);
+  border: 1px solid rgba(2, 245, 161, 0.15);
+  border-radius: var(--radius-lg);
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+}
+
+.hero__cursor {
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero__title {
