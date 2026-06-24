@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    { "source": "/de", "destination": "/de/index.html" },
+    { "source": "/en", "destination": "/en/index.html" },
+    { "source": "/es", "destination": "/es/index.html" },
+    { "source": "/fr", "destination": "/fr/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/de/(.*)",
+      "headers": [{ "key": "Content-Language", "value": "de" }]
+    },
+    {
+      "source": "/en/(.*)",
+      "headers": [{ "key": "Content-Language", "value": "en" }]
+    },
+    {
+      "source": "/es/(.*)",
+      "headers": [{ "key": "Content-Language", "value": "es" }]
+    },
+    {
+      "source": "/fr/(.*)",
+      "headers": [{ "key": "Content-Language", "value": "fr" }]
+    }
+  ]
+}
